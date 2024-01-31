@@ -35,3 +35,31 @@
 // console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack memory and heap memory 
+// in premitive stack memory is working
+// and in non-premitive heap memory is used
+
+let myYoutubeName = "hiteshchaudhary"
+let anotherName = myYoutubeName
+
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "ujjawal@upi" 
+}
+let userTwo = userOne
+
+userTwo.email = "user2@gmail.com"
+
+console.log(userTwo);
