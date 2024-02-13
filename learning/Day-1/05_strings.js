@@ -59,4 +59,6 @@ let index = 8;
 console.log(sentence.bold());
 // Expected output: <b>The quick brown fox jumps over the lazy dog.</b>
 
-console.log(sentence.charCodeAt);
+console.log(`Charecter code - ${sentence.charCodeAt(index)} and Charecter is ${sentence.charAt(index)}`);
+
+// read it : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt 
