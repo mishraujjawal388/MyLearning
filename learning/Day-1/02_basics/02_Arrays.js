@@ -17,3 +17,16 @@ console.log(all_heroes);
 const another_array = [ 1, 2, 3, [4, 5, [ 6, 7, [ 8, 9 ] ] ] ]
 const real_another_array = another_array.flat(Infinity)
 console.log(real_another_array);
+
+console.log(Array.isArray("Ujjawal"))
+console.log(Array.from("Ujjawal"))
+console.log(Array.from({name: "hitesh"})) // Interesting
+
+// if you want to make array with above .from methode you use key value like it make array of string or any other value to make array 
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3))
+// you also make array by above this methode
