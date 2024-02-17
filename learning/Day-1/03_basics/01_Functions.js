@@ -85,4 +85,60 @@ function loginUserMessage(username){
     return `${username} Just login`
 }
 // console.log(loginUserMessage());
-console.log(loginUserMessage("Ujjawal"));
+// console.log(loginUserMessage("Ujjawal"));
+
+// Make cart
+
+function calculateCartPrice(num1){
+    return num1
+}
+// console.log(calculateCartPrice(2));
+
+// if user bought more than two items then price add like this
+function calculateCartPrice(num1){
+    return num1
+}
+// console.log(calculateCartPrice(200, 300, 400));
+// its output is - 200 only first item price will be shown
+// so we use spread or rest operator to calculate prices of all items 
+
+// ... is known as rest operator and spread operator
+
+function calculateCartPrice(...num1){
+    return num1
+}
+// console.log(calculateCartPrice(200, 300, 400));
+// output - [200, 300, 400]
+// now we add all Array value and get price 
+
+const user = {
+    username: "Ujjawal",
+    prices: 199
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+// handleObject(user)
+// output - username is Ujjawal and price is 199
+// but when we write prices instead of price then its output is -username is Ujjawal and price is undefined
+//  so we use if and else to get exact price 
+
+// we also do this with below process, ham user define kiye bina bhi ise handleObject excute karate waqt bhi price pa sakte hai 
+// like 
+handleObject({
+    username: "sam",
+    price: 399
+})
+// output: username is sam and price is 399
+
+// now how we pass Array
+const myNewArray = [200, 300, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray
+}
+console.log(returnSecondValue(myNewArray));
+// output: [ 200, 300, 100, 600 ]
+// we also pass it by this methode 
+console.log(returnSecondValue([200, 400, 500, 100]));
+// output: [ 200, 400, 500, 100 ]
